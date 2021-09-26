@@ -1,17 +1,18 @@
 import React from 'react'
-import Hello from './component/Hello'
 import './App.css'
-import State from './component/State'
+import DayList from './component/DayList';
+import Day from './component/Day';
+import Header from './component/Header'
 
 const App = () => {
   
   return (
     <div className="App">
-    <State age ={10}></State>
-    <State age={20}></State>
-    <State age={30}></State>
+      <Header></Header>
+      <DayList></DayList>
+      <Day></Day>
     </div>
-  )
+  );
 }
 
 export default App
