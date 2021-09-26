@@ -7,10 +7,9 @@ const App = () => {
   
   return (
     <div className="App">
-    {/* <Hello></Hello>   */}
-    <State></State>
-    <State></State>
-    <State></State>
+    <State age ={10}></State>
+    <State age={20}></State>
+    <State age={30}></State>
     </div>
   )
 }
