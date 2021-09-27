@@ -97,7 +97,7 @@ table td:first-child {
   background-color: firebrick;
 }
 
-button {
+/* button {
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -107,7 +107,7 @@ button {
   padding: 10px 20px;
   color: #fff;
   background-color: dodgerblue;
-}
+} */
 
 .input_area {
   margin-bottom: 10px;
