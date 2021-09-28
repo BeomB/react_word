@@ -38,16 +38,32 @@ a {
   position: absolute;
   top: 10px;
   right: 0;
-}
-
-.header .link {
-  border: 1px solid #333;
-  padding: 10px;
-  margin-left: 10px;
-  background-color: #efefef;
+  margin : 10px;
   font-weight: bold;
   border-radius: 4px;
 }
+
+.header .menu button{
+ width: 100px;
+ height: 40px;
+ padding: 0px 0px;
+ margin-left: 10px;
+ font-size: small;
+  border-radius: 4px;
+  color: #eee;
+  background-color : seagreen;
+}
+
+.header .link {
+  /* border: 1px solid #333; */
+  padding: 10px;
+  margin-left: 10px;
+  /* background-color: #efefef; */
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+
 
 .list_day {
   display: flex;
@@ -97,7 +113,7 @@ table td:first-child {
   background-color: firebrick;
 }
 
-/* button {
+button {
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
@@ -107,7 +123,7 @@ table td:first-child {
   padding: 10px 20px;
   color: #fff;
   background-color: dodgerblue;
-} */
+}
 
 .input_area {
   margin-bottom: 10px;
