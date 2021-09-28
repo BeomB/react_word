@@ -7,16 +7,12 @@ const Word = ({ word }) => {
 
     function toggleShow() {
         setIsShow(!isShow)
-        // console.log(!isShow)
     }
-
     function toggleDone() {
         setIsDone(!isDone);
     }
 
-
     return (
-
         <tr className={isDone ? "off" : " "}>
             <td>
                 <input type="checkbox" checked={isDone} onChange={toggleDone} />
@@ -28,9 +24,7 @@ const Word = ({ word }) => {
                 <button className="btn_del">삭제</button>
             </td>
         </tr>
-
     )
-
 }
 
 export default Word

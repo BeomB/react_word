@@ -1,25 +1,22 @@
-import React from 'react'
+import React, { useState,useEffect } from 'react'
 import { useParams } from 'react-router';
-import dummy from '../db/db.json'
+import useFetch from '../hooks/useFetch';
+
 import Word from './Word';
 
 const Day = () => {
+    const useparam = useParams();                   // 파라미터를 받아오는 부분
+    const day = useparam.day 
 
-    const useparam = useParams();
-    console.log(useparam)
-    const day = useparam.day
-    const wordList = dummy.words.filter(word => (
-     word.day === Number(useparam.day)
-        ))
+    const words = useFetch(`http://localhost:3001/words?day=${day}`)
+
+
     
-
-
-
     return (
     <>
     <table>
         <tbody>
-            {wordList.map(word => (
+            {words.map(word => (
             <Word word={word} key={word.id}/>
             ))}
         </tbody>

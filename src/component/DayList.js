@@ -1,19 +1,30 @@
-import React from 'react'
-import dummy from "../db/db.json"
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import useFetch from '../hooks/useFetch'
 
 const DayList = () => {
-    console.log(dummy)
+                         
+    
+    const days = useFetch('http://localhost:3001/days');
+
     return (
-        <ul className="list_day">
-            {dummy.days.map(day =>
-                <li key={day.id}>
-                    <Link to={`/day/${day.day}`}>Day {day.day}</Link>
-                </li>
-            )}
-        </ul>
+        <>
+            <ul className="list_day">
+                {days.map(day =>
+                    <li key={day.id}>
+                        <Link to={`/day/${day.day}`}>Day {day.day}</Link>
+                    </li>
+                )}
+            </ul>
+</>
     )
 }
 
 export default DayList
+
+
+
+
+// useEffect(() => {
+    //     console.log("count Change")
+    // },[count]);                                         /// count가 변경 되었을때만 함수를 실행한다.
