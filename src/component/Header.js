@@ -10,14 +10,14 @@ const Header = () => {
             </h1>
             <div className="menu">
                 <button>
-                    <a href="#x" className="link">
+                    <Link to="/create_word" className="link">
                         단어 추가
-                    </a>
+                    </Link>
                 </button>
                 <button>
-                    <a href="#x" className="link">
-                        Day 추가
-                    </a>
+                <Link to="/create_day" className="link">
+                        DAY 추가
+                    </Link>
                 </button>
             </div>
         </div>
