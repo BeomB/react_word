@@ -3,10 +3,10 @@ import { useHistory } from 'react-router'
 import useFetch from '../hooks/useFetch'
 
 const CreateDay = () => {
-    const days= useFetch("http://localhost:3001/days")
-    const history= useHistory();
-    
-    function addDay(){
+    const days = useFetch("http://localhost:3001/days")
+    const history = useHistory();
+
+    function addDay() {
         fetch(`http://localhost:3001/days/`, {
             method: 'POST',
             headers: {

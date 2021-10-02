@@ -12,10 +12,10 @@ export default function useFetch(url) {
                 setData(data);
             })
     }
-    
+
     useEffect(() => {
         CallAPI()
-    }, [url])               
+    }, [url])
 
     return data;
 

@@ -15,7 +15,7 @@ const Header = () => {
                     </Link>
                 </button>
                 <button>
-                <Link to="/create_day" className="link">
+                    <Link to="/create_day" className="link">
                         DAY 추가
                     </Link>
                 </button>

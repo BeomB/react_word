@@ -9,6 +9,7 @@ const Word = ({ word: w }) => {   /// props로 넘어온 변수 word를 w로 사
     function toggleShow() {
         setIsShow(!isShow)
     }
+
     function toggleDone() {
         // setIsDone(!isDone);
         fetch(`http://localhost:3001/words/${word.id}`, {
