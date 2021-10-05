@@ -146,3 +146,11 @@ button {
   height: 40px;
   font-size: 20px;
 }
+
+.App{
+  background-color: white;
+}
+
+html{
+  background-color:rgb(218, 247, 247)
+}
